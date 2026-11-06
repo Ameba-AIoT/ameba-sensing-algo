@@ -1,0 +1,16 @@
+# Radar algorithm options, valid only when WIFI_RADAR_ENABLE (defined in main SDK) is set
+
+if WIFI_RADAR_ENABLE
+
+choice
+    prompt "RADAR scene"
+    default RADAR_GENERAL_SCENE
+
+    config RADAR_GENERAL_SCENE
+        bool "General scene"
+
+    config RADAR_M_FRIDGE_SCENE
+        bool "M fridge scene"
+endchoice
+
+endif
