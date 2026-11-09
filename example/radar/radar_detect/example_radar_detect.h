@@ -14,6 +14,7 @@
 #define RADAR_REPORT_GROUP 6        /* = number of consecutive report types*/
 #define RADAR_REPORT_BUF_DEPTH 1    /* maximum buffer num for per report type */
 #define RADAR_REPORT_BUF_NUM (RADAR_REPORT_GROUP * RADAR_REPORT_BUF_DEPTH)
+#define RADAR_ACS_ENABLE          0
 
 struct radar_report_data {
 	u8 *radar_buffer;
